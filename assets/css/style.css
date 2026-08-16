@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: url('../images/water.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* start button */
+
+#menu {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(58, 26, 117);
+  text-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+  display: flex;           
+  flex-direction: column; 
+  align-items: center;     
+  justify-content: center; 
+}
+#menu button {
+  font-size: 24px;
+  padding: 20px 25px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', sans-serif;
+  border-radius: 10px;
+  background-color: rgb(58, 26, 117);
+  color: white;
+}
+
+
+
+/* countdown styling */
+#countdown {
+  font-size: 55px;
+  margin-top: 20px;
+  color: yellow;
+}
+
+
+
+/* background */
+
+#island {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -46.6%);             
+  z-index: 0;              
+  width: 1050px;           
+  height: 850px;            
+}
+canvas {
+  position: relative;       
+  z-index: 1;
+} 
+
+
+/* game over screen */
+#gameOverMenu {
+  position: absolute;          
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;                 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+  border-radius: 10px;
+  color: #FF5E00;
+  font-family: 'press Start 2P', sans-serif;
+  font-size: 35px;
+  text-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+#gameOverMenu button {
+  margin-top: 24px;
+  padding: 20px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-shadow:2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: #FF5E00;
+  border-radius: 10px;
+}
